@@ -1,0 +1,173 @@
+==============================================================
+PARALLEL TEXT SEARCH ENGINE
+By SHAFA RABBANI FITYATUL MUKARRAMAH (247006111020)
+==============================================================
+Mesin: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz | 2 core fisik / 4 logis | RAM 7.7 GB | Windows 11 (AMD64)
+[SETUP] generate dataset 100,000 baris ...
+[GEN] 50,000 / 100,000 baris
+[GEN] 100,000 / 100,000 baris
+[SETUP] generate dataset 500,000 baris ...
+[GEN] 50,000 / 500,000 baris
+[GEN] 100,000 / 500,000 baris
+[GEN] 150,000 / 500,000 baris
+[GEN] 200,000 / 500,000 baris
+[GEN] 250,000 / 500,000 baris
+[GEN] 300,000 / 500,000 baris
+[GEN] 350,000 / 500,000 baris
+[GEN] 400,000 / 500,000 baris
+[GEN] 450,000 / 500,000 baris
+[GEN] 500,000 / 500,000 baris
+[SETUP] generate dataset 1,000,000 baris ...
+[GEN] 50,000 / 1,000,000 baris
+[GEN] 100,000 / 1,000,000 baris
+[GEN] 150,000 / 1,000,000 baris
+[GEN] 200,000 / 1,000,000 baris
+[GEN] 250,000 / 1,000,000 baris
+[GEN] 300,000 / 1,000,000 baris
+[GEN] 350,000 / 1,000,000 baris
+[GEN] 400,000 / 1,000,000 baris
+[GEN] 450,000 / 1,000,000 baris
+[GEN] 500,000 / 1,000,000 baris
+[GEN] 550,000 / 1,000,000 baris
+[GEN] 600,000 / 1,000,000 baris
+[GEN] 650,000 / 1,000,000 baris
+[GEN] 700,000 / 1,000,000 baris
+[GEN] 750,000 / 1,000,000 baris
+[GEN] 800,000 / 1,000,000 baris
+[GEN] 850,000 / 1,000,000 baris
+[GEN] 900,000 / 1,000,000 baris
+[GEN] 950,000 / 1,000,000 baris
+[GEN] 1,000,000 / 1,000,000 baris
+[SETUP] generate 1 file total 500,000 baris ...
+[GEN] 50,000 / 500,000 baris
+[GEN] 100,000 / 500,000 baris
+[GEN] 150,000 / 500,000 baris
+[GEN] 200,000 / 500,000 baris
+[GEN] 250,000 / 500,000 baris
+[GEN] 300,000 / 500,000 baris
+[GEN] 350,000 / 500,000 baris
+[GEN] 400,000 / 500,000 baris
+[GEN] 450,000 / 500,000 baris
+[GEN] 500,000 / 500,000 baris
+[SETUP] generate 10 file total 500,000 baris ...
+[GEN] 50,000 / 500,000 baris
+[GEN] 100,000 / 500,000 baris
+[GEN] 150,000 / 500,000 baris
+[GEN] 200,000 / 500,000 baris
+[GEN] 250,000 / 500,000 baris
+[GEN] 300,000 / 500,000 baris
+[GEN] 350,000 / 500,000 baris
+[GEN] 400,000 / 500,000 baris
+[GEN] 450,000 / 500,000 baris
+[GEN] 500,000 / 500,000 baris
+[SETUP] generate 50 file total 500,000 baris ...
+[GEN] 50,000 / 500,000 baris
+[GEN] 100,000 / 500,000 baris
+[GEN] 150,000 / 500,000 baris
+[GEN] 200,000 / 500,000 baris
+[GEN] 250,000 / 500,000 baris
+[GEN] 300,000 / 500,000 baris
+[GEN] 350,000 / 500,000 baris
+[GEN] 400,000 / 500,000 baris
+[GEN] 450,000 / 500,000 baris
+[GEN] 500,000 / 500,000 baris
+[WARMUP] 1x sequential ...
+[ 1/32] threads   sequential w=1   files=1   run 1: 13.994s
+[ 1/32] threads   sequential w=1   files=1   run 2: 14.321s
+[ 1/32] threads   sequential w=1   files=1   run 3: 14.308s
+[ 2/32] threads   thread     w=1   files=1   run 1: 16.261s
+[ 2/32] threads   thread     w=1   files=1   run 2: 14.916s
+[ 2/32] threads   thread     w=1   files=1   run 3: 12.782s
+[ 3/32] threads   thread     w=2   files=1   run 1: 12.491s
+[ 3/32] threads   thread     w=2   files=1   run 2: 12.505s
+[ 3/32] threads   thread     w=2   files=1   run 3: 12.417s
+[ 4/32] threads   thread     w=4   files=1   run 1: 12.557s
+[ 4/32] threads   thread     w=4   files=1   run 2: 12.464s
+[ 4/32] threads   thread     w=4   files=1   run 3: 12.619s
+[ 5/32] threads   thread     w=8   files=1   run 1: 12.907s
+[ 5/32] threads   thread     w=8   files=1   run 2: 12.853s
+[ 5/32] threads   thread     w=8   files=1   run 3: 12.607s
+[ 6/32] threads   thread     w=16  files=1   run 1: 12.635s
+[ 6/32] threads   thread     w=16  files=1   run 2: 12.264s
+[ 6/32] threads   thread     w=16  files=1   run 3: 9.210s
+[ 7/32] threads   thread     w=1   files=1   run 1: 7.980s
+[ 7/32] threads   thread     w=1   files=1   run 2: 8.612s
+[ 7/32] threads   thread     w=1   files=1   run 3: 8.606s
+[ 8/32] threads   thread     w=2   files=1   run 1: 9.483s
+[ 8/32] threads   thread     w=2   files=1   run 2: 9.707s
+[ 8/32] threads   thread     w=2   files=1   run 3: 9.296s
+[ 9/32] threads   thread     w=4   files=1   run 1: 10.445s
+[ 9/32] threads   thread     w=4   files=1   run 2: 10.235s
+[ 9/32] threads   thread     w=4   files=1   run 3: 10.329s
+[10/32] threads   thread     w=8   files=1   run 1: 10.328s
+[10/32] threads   thread     w=8   files=1   run 2: 9.968s
+[10/32] threads   thread     w=8   files=1   run 3: 10.254s
+[11/32] processes process    w=1   files=1   run 1: 14.887s
+[11/32] processes process    w=1   files=1   run 2: 6.640s
+[11/32] processes process    w=1   files=1   run 3: 6.569s
+[12/32] processes process    w=2   files=1   run 1: 6.610s
+[12/32] processes process    w=2   files=1   run 2: 4.957s
+[12/32] processes process    w=2   files=1   run 3: 4.929s
+[13/32] processes process    w=4   files=1   run 1: 4.583s
+[13/32] processes process    w=4   files=1   run 2: 4.717s
+[13/32] processes process    w=4   files=1   run 3: 5.428s
+[14/32] processes process    w=8   files=1   run 1: 5.561s
+[14/32] processes process    w=8   files=1   run 2: 5.195s
+[14/32] processes process    w=8   files=1   run 3: 4.974s
+[15/32] data      sequential w=1   files=1   run 1: 0.747s
+[15/32] data      sequential w=1   files=1   run 2: 0.760s
+[15/32] data      sequential w=1   files=1   run 3: 0.789s
+[16/32] data      thread     w=4   files=1   run 1: 0.871s
+[16/32] data      thread     w=4   files=1   run 2: 0.977s
+[16/32] data      thread     w=4   files=1   run 3: 1.042s
+[17/32] data      process    w=4   files=1   run 1: 0.818s
+[17/32] data      process    w=4   files=1   run 2: 0.628s
+[17/32] data      process    w=4   files=1   run 3: 0.667s
+[18/32] data      sequential w=1   files=1   run 1: 4.153s
+[18/32] data      sequential w=1   files=1   run 2: 3.996s
+[18/32] data      sequential w=1   files=1   run 3: 4.044s
+[19/32] data      thread     w=4   files=1   run 1: 5.152s
+[19/32] data      thread     w=4   files=1   run 2: 4.984s
+[19/32] data      thread     w=4   files=1   run 3: 5.031s
+[20/32] data      process    w=4   files=1   run 1: 1.988s
+[20/32] data      process    w=4   files=1   run 2: 2.509s
+[20/32] data      process    w=4   files=1   run 3: 2.033s
+[21/32] data      sequential w=1   files=1   run 1: 8.714s
+[21/32] data      sequential w=1   files=1   run 2: 13.005s
+[21/32] data      sequential w=1   files=1   run 3: 26.273s
+[22/32] data      thread     w=4   files=1   run 1: 28.585s
+[22/32] data      thread     w=4   files=1   run 2: 13.012s
+[22/32] data      thread     w=4   files=1   run 3: 12.332s
+[23/32] data      process    w=4   files=1   run 1: 8.138s
+[23/32] data      process    w=4   files=1   run 2: 9.043s
+[23/32] data      process    w=4   files=1   run 3: 10.376s
+[24/32] files     sequential w=1   files=1   run 1: 6.246s
+[24/32] files     sequential w=1   files=1   run 2: 6.429s
+[24/32] files     sequential w=1   files=1   run 3: 6.102s
+[25/32] files     thread     w=4   files=1   run 1: 6.244s
+[25/32] files     thread     w=4   files=1   run 2: 6.500s
+[25/32] files     thread     w=4   files=1   run 3: 7.089s
+[26/32] files     process    w=4   files=1   run 1: 4.271s
+[26/32] files     process    w=4   files=1   run 2: 4.936s
+[26/32] files     process    w=4   files=1   run 3: 4.423s
+[27/32] files     sequential w=1   files=10  run 1: 6.133s
+[27/32] files     sequential w=1   files=10  run 2: 6.015s
+[27/32] files     sequential w=1   files=10  run 3: 7.426s
+[28/32] files     thread     w=4   files=10  run 1: 6.510s
+[28/32] files     thread     w=4   files=10  run 2: 6.335s
+[28/32] files     thread     w=4   files=10  run 3: 6.272s
+[29/32] files     process    w=4   files=10  run 1: 4.628s
+[29/32] files     process    w=4   files=10  run 2: 4.365s
+[29/32] files     process    w=4   files=10  run 3: 4.390s
+[30/32] files     sequential w=1   files=50  run 1: 6.176s
+[30/32] files     sequential w=1   files=50  run 2: 7.359s
+[30/32] files     sequential w=1   files=50  run 3: 6.389s
+[31/32] files     thread     w=4   files=50  run 1: 6.296s
+[31/32] files     thread     w=4   files=50  run 2: 6.358s
+[31/32] files     thread     w=4   files=50  run 3: 6.270s
+[32/32] files     process    w=4   files=50  run 1: 4.335s
+[32/32] files     process    w=4   files=50  run 2: 4.427s
+[32/32] files     process    w=4   files=50  run 3: 4.421s
+
+Selesai. CSV: D:\UTS KPT\results\benchmark.csv
+Ringkasan: D:\UTS KPT\results\summary.csv

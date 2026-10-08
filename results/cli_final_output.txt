@@ -1,0 +1,84 @@
+==============================================================
+PARALLEL TEXT SEARCH ENGINE
+By SHAFA RABBANI FITYATUL MUKARRAMAH (247006111020)
+==============================================================
+Dataset         : data\corpus_1M.txt  (129.0 MB)
+Keyword         : process, server, cache, warning, error
+==============================================================
+
+Mode            : sequential (baseline 1 urutan)
+
+Keyword      | Baris cocok | Total kemunculan
+---------------------------------------------
+process      |      74,764 |          76,163
+server       |      54,660 |          55,422
+cache        |       8,850 |           8,867
+warning      |       6,035 |           6,047
+error        |         338 |             338
+
+Contoh baris (ditandai byte offset file, lihat DOKUMENTASI):
+  [process] corpus_1M.txt@700: vertex amber token horizon receipt shipment wavelength beacon stream field header beacon beacon horizon proces
+  [server] corpus_1M.txt@524: camera bit display comet ivory meteor timer rule equator shader loader circuit resistor afternoon footer width
+  [cache] corpus_1M.txt@8,868: row index library event ratio channel magenta query tempo runtime weight canyon cache shader
+  [warning] corpus_1M.txt@3,774: snapshot channel object driver warning evening list snapshot azure
+  [error] corpus_1M.txt@168,540: 2026-09-04 22:44:58 [FATAL] rule speaker violet anchor error compiler invoice density task graph mass
+Waktu total     : 13.454 detik
+Throughput      : 74,326 baris/detik  (9.6 MB/detik)
+==============================================================
+
+Mode            : multithread (ThreadPoolExecutor)
+Jumlah thread : 4
+Sinkronisasi    : merge
+Thread-4 menyelesaikan 16 chunk
+SEMUA PENCARIAN SELESAI
+
+Keyword      | Baris cocok | Total kemunculan
+---------------------------------------------
+process      |      74,764 |          76,163
+server       |      54,660 |          55,422
+cache        |       8,850 |           8,867
+warning      |       6,035 |           6,047
+error        |         338 |             338
+
+Contoh baris (ditandai byte offset file, lihat DOKUMENTASI):
+  [process] corpus_1M.txt@700: vertex amber token horizon receipt shipment wavelength beacon stream field header beacon beacon horizon proces
+  [server] corpus_1M.txt@524: camera bit display comet ivory meteor timer rule equator shader loader circuit resistor afternoon footer width
+  [cache] corpus_1M.txt@8,868: row index library event ratio channel magenta query tempo runtime weight canyon cache shader
+  [warning] corpus_1M.txt@3,774: snapshot channel object driver warning evening list snapshot azure
+  [error] corpus_1M.txt@168,540: 2026-09-04 22:44:58 [FATAL] rule speaker violet anchor error compiler invoice density task graph mass
+Waktu total     : 11.860 detik
+Throughput      : 84,316 baris/detik  (10.9 MB/detik)
+==============================================================
+
+Mode            : multiprocessing (ProcessPoolExecutor)
+Jumlah process: 4
+Process-4 menyelesaikan 16 chunk
+SEMUA PENCARIAN SELESAI
+
+Keyword      | Baris cocok | Total kemunculan
+---------------------------------------------
+process      |      74,764 |          76,163
+server       |      54,660 |          55,422
+cache        |       8,850 |           8,867
+warning      |       6,035 |           6,047
+error        |         338 |             338
+
+Contoh baris (ditandai byte offset file, lihat DOKUMENTASI):
+  [process] corpus_1M.txt@700: vertex amber token horizon receipt shipment wavelength beacon stream field header beacon beacon horizon proces
+  [server] corpus_1M.txt@524: camera bit display comet ivory meteor timer rule equator shader loader circuit resistor afternoon footer width
+  [cache] corpus_1M.txt@8,868: row index library event ratio channel magenta query tempo runtime weight canyon cache shader
+  [warning] corpus_1M.txt@3,774: snapshot channel object driver warning evening list snapshot azure
+  [error] corpus_1M.txt@168,540: 2026-09-04 22:44:58 [FATAL] rule speaker violet anchor error compiler invoice density task graph mass
+Waktu total     : 5.692 detik
+Throughput      : 175,683 baris/detik  (22.7 MB/detik)
+==============================================================
+PERBANDINGAN MODE
+Mode         | Worker | Waktu (s) |  Speedup | Efisiensi
+--------------------------------------------------------------
+sequential   |      1 |    13.454 |    1.00x |    100.0%
+thread       |      4 |    11.860 |    1.13x |     28.4%
+process      |      4 |     5.692 |    2.36x |     59.1%
+==============================================================
+PARALLEL TEXT SEARCH ENGINE
+By SHAFA RABBANI FITYATUL MUKARRAMAH (247006111020)
+==============================================================

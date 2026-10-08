@@ -1,0 +1,9 @@
+{
+  "os": "Windows 11 (AMD64)",
+  "python": "3.14.4",
+  "cpu_model": "11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz",
+  "cpu_logical": 4,
+  "cpu_physical": 2,
+  "ram_gb": 7.7,
+  "disk_tipe": "tidak diketahui"
+}
